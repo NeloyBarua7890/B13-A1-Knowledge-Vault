@@ -118,9 +118,24 @@ nav {
 }
 
 /* Notes Section Styles */
-#notes-section {
-  padding-top: 130px;
-  border: 2px solid orangered;
+#notes-section .notes-section-container .section-heading h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #001931;
+}
+
+#notes-section .notes-section-container .section-heading p {
+  text-align: center;
+  font-size: 16px;
+  color: #627382;
+  margin-bottom: 44px;
+}
+
+.notes-card-container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .notes-card-container .notes-card img {
