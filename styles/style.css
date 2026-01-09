@@ -26,9 +26,26 @@
   background-color: lightseagreen;
 }
 
+.btn-secondary {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button-container {
+  display: flex;
+  gap: 16px;
+}
+
 /* Main Styles */
-header {
-  padding: 16px 120px;
+nav {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav-container {
@@ -59,19 +76,49 @@ header {
   padding: 8px 12px;
   background-color: #ffffff;
   border-radius: 1000px;
+  border: none;
+  margin-bottom: 16px;
+  cursor: pointer;
 }
 
-.banner-container {
-  max-width: 1360px;
-  margin: 0 auto;
-  padding: 160px 120px;
-  border: 2px solid blue;
+.dynamic-button i {
+  margin-right: 8px;
+}
+
+#banner-container {
+  background: url("../assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 120px 180px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#banner-container .banner-heading h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+#banner-container .banner-heading h1 span {
+  color: #30b868;
+}
+
+#banner-container .banner-heading p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 32px;
 }
 
 /* Notes Section Styles */
 #notes-section {
-  max-width: 1360px;
-  margin: 0 auto;
   padding-top: 130px;
   border: 2px solid orangered;
 }
@@ -119,6 +166,38 @@ header {
   font-weight: 500;
   margin: 16px 0px;
   color: #001931;
+}
+
+/* Early Access Section Styles */
+#early-access-section {
+  background-color: #f7f6f2;
+  padding: 40px 80px;
+  margin: 0px 120px 120px 120px;
+  border-radius: 12px;
+}
+
+#early-access-section .early-access-heading {
+  text-align: center;
+}
+
+#early-access-section .early-access-heading h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #001931;
+  margin-bottom: 16px;
+}
+
+#early-access-section .early-access-heading p {
+  font-size: 16px;
+  color: #627382;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+#early-access-section .early-access-span {
+  font-size: 16px;
+  color: #627382;
+  margin-top: 16px;
 }
 
 /* Footer Styles */
